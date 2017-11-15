@@ -13,9 +13,9 @@ class local::create_dirs(
 ---
   <% dirs_array = Array.new; @dirs_path.keys.sort.each do |this_path|
      dirs = this_path.split("/")
-     unless dirs_path[this_path].nil? then
-       modes = dirs_path[this_path][0].nil? ? [] : dirs_path[this_path][0].split("/")
-       owner = dirs_path[this_path][1].nil? ? [] : dirs_path[this_path][1].split("/")
+     unless @dirs_path[this_path].nil? then
+       modes = @dirs_path[this_path][0].nil? ? [] : @dirs_path[this_path][0].split("/")
+       owner = @dirs_path[this_path][1].nil? ? [] : @dirs_path[this_path][1].split("/")
      else
        modes = []
        owner = []
