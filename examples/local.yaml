@@ -1,0 +1,6 @@
+---
+local::create_dirs::dirs_path:
+  /scratch/pools_home:
+    - "/7777/0755"
+  /etc/grid-security/vomsdir:
+  /etc/vomses:
